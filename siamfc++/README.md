@@ -37,7 +37,7 @@ Changed the code to make it easier to use. The edited codes are publish here, so
     - Changed to synchronously display the tracking in the ROI in the upper left corner of the tracker
 
 3. video_analyst/videoanalyst/utils/visualization.py
-    - Solve these problems
+    - Solved these problems
         - Video that cannot be played by QuickTime Player on mac is saved.
         - Tracking results (box coordinates) are not output to the file as numerical values.
 
