@@ -81,11 +81,13 @@ python main_multiple.py \
 See `main_multiple.sh` for details.
 
 
+---
+
 
 ## SiamFC++ cell detection and quantifying the pixel values of it.
 <img src="imgs/Overview_2.jpeg">
 
-### Make a movie from an image sequence for SiamFC++ object detection.
+### (1) Make a movie from an image sequence for SiamFC++ cell detection.
 ```bash
 python img2movie.py \
 	--data_path [Folder storing .tif images] \
@@ -106,15 +108,20 @@ or
 sh img2movie.sh
 ```
 
-### siamFC++
+### (2) SiamFC++ cell detection.
+
+To use siamfc++, you need to set it up. See [README.md](siamfc++/README.md) in siamfc++.
 
 ```bash
-python ./demo/main/video/sot_video.py --config ./experiments/siamfcpp/test/vot/siamfcpp_googlenet.yaml \
-	--video [動画のパス] \
-	--output [保存する動画名]
-
 cd video_analyst
 
+python ./demo/main/video/sot_video.py --config ./experiments/siamfcpp/test/vot/siamfcpp_googlenet.yaml \
+	--video [Path to a movie] \
+	--output [Name of the video to be saved]
+```
+Example
+
+```bash
 python ./demo/main/video/sot_video.py --config ./experiments/siamfcpp/test/vot/siamfcpp_googlenet.yaml \
 	--video /Users/macbookpro/Desktop/movies/2021_0323_dia10-5-gcy28d-GCaMP6f+paQuasAr3-18_pa.avi \
 	--output /Users/macbookpro/Desktop/movie_siamfc++_result/2021_0323_dia10-5-gcy28d-GCaMP6f+paQuasAr3-18_pa.mp4
