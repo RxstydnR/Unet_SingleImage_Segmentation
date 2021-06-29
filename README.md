@@ -4,8 +4,6 @@ Project for RA.
 ## Image Segmentation with the first frame of dataset.
 <img src="imgs/Overview_1.jpeg">
 
-## How to Run 
-
 ### (1),(2) Converting the initial frame .tif to .jpg
 
 To create an annotation using Labelme, convert it to a .jpg image, since .tif images are not displayed in Labelme. 
