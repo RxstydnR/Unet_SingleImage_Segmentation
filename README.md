@@ -126,3 +126,20 @@ python ./demo/main/video/sot_video.py --config ./experiments/siamfcpp/test/vot/s
 	--video /Users/macbookpro/Desktop/movies/2021_0323_dia10-5-gcy28d-GCaMP6f+paQuasAr3-18_pa.avi \
 	--output /Users/macbookpro/Desktop/movie_siamfc++_result/2021_0323_dia10-5-gcy28d-GCaMP6f+paQuasAr3-18_pa.mp4
 ```
+
+### (3) Quantifying the pixel values in the bounding box.
+
+```bash
+python cell_quantify.py \
+	--DATA_PATH [Folder storing .tif images] \
+	--CSV_PATH  [Csv file storing bbox values.] \
+	--SAVE_PATH [Parent saving directory. New saving folder with dataset name will be created in the saving folder.] 
+```
+Example
+```bash
+python cell_quantify.py \
+	--DATA_PATH /data/Users/katafuchi/RA/Nematode/2021_0303_dia10-5-gcy28d-GCaMP6f+paQuasAr3-3 \
+	--CSV_PATH  /data/Users/katafuchi/RA/Nematode/cell_bbox/2021_0303_dia10-5-gcy28d-GCaMP6f+paQuasAr3-3_pa.csv \
+	--SAVE_PATH /data/Users/katafuchi/RA/Nematode/results_cell_quantify 
+```
+
