@@ -25,18 +25,21 @@ Put these files on **video_analyst/models/siamfcpp//**
 
 Changed the code to make it easier to use. The edited codes are publish here, so you can just replace it.
 
-1. video_analyst/videoanalyst/pipeline/tracker_impl/siamfcpp_track.py
+1. **video_analyst/videoanalyst/pipeline/tracker_impl/siamfcpp_track.py**
+
     Modified to allow control of ROI size.
 
-2. video_analyst/demo/main/video/sot_video.py
+2. **video_analyst/demo/main/video/sot_video.py**
+
     - Extended the time for the first ROI selection from 5s to 30s.
+
         Press the "s" key during 30 seconds to select the ROI.
 
     - Changed to create saving folder automatically when the folder does not exist.
 
     - Changed to synchronously display the tracking in the ROI in the upper left corner of the tracker
 
-3. video_analyst/videoanalyst/utils/visualization.py
+3. **video_analyst/videoanalyst/utils/visualization.py**
     - Solved these problems
         - Video that cannot be played by QuickTime Player on mac is saved.
         - Tracking results (box coordinates) are not output to the file as numerical values.
