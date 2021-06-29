@@ -106,6 +106,9 @@ or
 sh img2movie.sh
 ```
 
+At the beginning, you are asked to set the object tracking region in the initial frame.
+Then press "s" key and drag the area, after that press "Enter" key to start tracking.
+
 ### (2) SiamFC++ cell detection.
 
 To use siamfc++, you need to set it up. See [README.md](siamfc++/README.md) in siamfc++.
